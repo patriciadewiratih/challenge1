@@ -46,16 +46,16 @@ function fillThrottle(){
     throttle.arc(100,100,90,pointToFill,diff/10+pointToFill);
 
     // changing the color
-    if (spThrottle <=25){
+    if (spThrottle > 100){
         throttle.strokeStyle = '#A43134';
-    } else if (spThrottle <= 50){
-        throttle.strokeStyle = '#E2C044';
-    } else {
+    } else if (spThrottle < 50){
+        throttle.strokeStyle = "#E2C044";
+    }else {
         throttle.strokeStyle = '#8ACB88';
     }
 
     // //change to change amount
-    if (spThrottle >= 50){
+    if (spThrottle >= 20){
         clearTimeout(fillTheThrottle);
     }
     throttle.stroke();
@@ -79,6 +79,8 @@ function fillSpeed(){
     // changing the color
     if (spSpeed > 100){
         speed.strokeStyle = '#A43134';
+    }else if (spSpeed < 50){
+        speed.strokeStyle = "#E2C044";
     }else {
         speed.strokeStyle = '#8ACB88';
     }
@@ -106,11 +108,11 @@ function fillAccel(){
     accel.arc(100,100,90,pointToFill,diff/10+pointToFill);
 
 // changing the color
-if (spAccel <=25){
+if (spAccel > 100){
     accel.strokeStyle = '#A43134';
-} else if (spAccel <= 50){
-    accel.strokeStyle = '#E2C044';
-} else {
+}else if (spAccel < 50){
+    accel.strokeStyle = "#E2C044";
+}else {
     accel.strokeStyle = '#8ACB88';
 }
 
