@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<title>Template</title>
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2:100,400" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+				<a href="index.html"><img src="images/logo.png" alt="SpaceX"></a>
+			<a href="parameters.html">Ship Parameters</a>
+		</header>
+		<table class="content-wrap">
+			<tr>
+				<th>Fuel</th>
+                <th>Throttle</th>
+            </tr>
+			<tr>
+					<th><canvas width= 200 height= 200 id="fuel"></canvas></th>
+                    <th><canvas width= 200 height= 200 id="throttle"></canvas></th>
+			</tr>
+			<tr>
+				<td class="fuelStatus"> <button onclick="refill()">Refill!</button></td>
+                <td class="throttleStatus"><button onclick="increaseThrottle()">Increase!</button></td>
+            </tr>
+            <tr>
+                    <th>Speed</th>
+                    <th>Acceleration (G-force)</th>
+            </tr>
+            <tr>
+					<th><canvas width= 200 height= 200 id="speed"></canvas></th>
+					<th><canvas width= 200 height= 200 id="accel"></canvas></th>
+			</tr>
+			<tr>
+				<td><button onclick="increaseSpeed()">Increase!</button></td>
+                <td><button onclick="increaseAccel()">Increase!</button></td>
+            </tr>
+		</table>
+		<script src="scripts/parameters.js"></script>
+	</body>
+</html>

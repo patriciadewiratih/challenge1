@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+header{
+	font-size: 1.5rem;
+	text-align: right;
+  height: 70px;;   
+	width:100%;
+	font-family: 'exo 2', serif;
+	text-decoration: none;
+	padding: 1rem;
+	background: #A43134;
+	position: fixed;
+}
+
+header img{
+  height: 50px;
+	position: fixed;
+	top: 0.5rem;
+	left: 1rem;
+	
+}
+
+a {
+	text-decoration: none;
+	color: #D3D0CB;
+	transition: 1s;
+}
+
+a:hover{
+	color: #E2C044;
+}
+
+body{
+	font-family: 'exo 2';
+	font-size: 1rem;
+	color: #FFFFFF;
+	background-color: #393E41;
+	margin: 0 auto;
+	padding: 0;
+	display: inline;
+}
+
+h2, p{
+	text-align: justify;
+}
+
+.moreInfo{
+	text-align: center;
+	font-size: 2rem;
+}
+
+div{
+	text-align: center;
+}
+
+.navButton{
+	width: 10rem;
+	transition: 1s;
+}
+
+.navButton a:hover{
+	color:black;
+}
+
+.navButton:hover{
+	background: #E2C044;
+}
+
+.content-wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 5rem;
+		overflow: auto;
+		margin-top: 50px;
+}
+
+canvas{
+	display: inline;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+}
+
+table{
+	font-size: 2rem;
+	color: #FFFFFF;
+	width: 50rem;
+}
+
+th{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	font-weight: 400;
+	text-align: center;
+}
+
+td{
+	font-weight : 100;
+	font-size: 1.5rem;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.fuelStatus, .throttleStatus {
+	padding-bottom: 2rem;
+}
+
+button{
+	width: 7rem;
+	height: 3rem;
+	font-size: 1rem;
+	background: none;
+	border-color: #A43134;
+	border-radius: 25px;
+	color: whitesmoke;
+}
+
+#food{
+	width: 100%;
+}
+
+#foodBar{
+	width: 0%;
+	height: 30px;
+}
+
+#water{
+	width: 100%;
+}
+
+#waterBar{
+	width: 0%;
+	height: 30px;
+}
